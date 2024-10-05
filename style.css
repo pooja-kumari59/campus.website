@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2d2d2d;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Headings */
+h1, h2, p {
+    border: 2px solid #555;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+h1 {
+    background-color: #a8d4a4;
+}
+
+h2 {
+    background-color: #e0bfbf;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.new, .con {
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #86a1d3;
+}
+
+.con {
+    margin-top: -20px;
+}
+
+/* Images */
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: calc(33% - 20px);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Hover Effects */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-container img {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container img {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.council-container {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+.council-item {
+    text-align: center; /* Center text below each image */
+}
+
+.council-item img {
+    border: 2px solid #811818; /* Optional border around images */
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for images */
+    transition: transform 0.3s ease; /* Animation on hover */
+}
+
+.council-item img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.newspaper {
+    background-color: #f0f0f0; /* Light grey background for a newspaper effect */
+    color: #333; /* Dark grey text for better readability */
+    padding: 20px; /* Add some padding */
+    border: 1px solid #ccc; /* Optional: border for a newspaper-like outline */
+    max-width: 800px; /* Limit the width of the section */
+    margin: 20px auto; /* Center the section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1.new {
+    font-size: 2em; /* Larger font size for the main title */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-weight: bold; /* Bold the main title */
+}
+
+article {
+    margin-bottom: 20px; /* Space between articles */
+    line-height: 1.6; /* Improve readability */
+}
+
+strong {
+    color: #000; /* Ensure bold text is black */
+    font-weight: bold; /* Make sure the text is bold */
+}
+.council-container {
+    display: flex;
+    flex-wrap: wrap; /* Isse agar screen choti hogi toh next line pe shift hoga */
+    gap: 20px; /* Photos ke beech mein space ke liye */
+    justify-content: space-around; /* Photos ko horizontally space karega */
+}
+
+.council-item {
+    text-align: center; /* Text ko image ke niche center karega */
+}
